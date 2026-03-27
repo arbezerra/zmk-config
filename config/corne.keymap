@@ -37,6 +37,11 @@
             key-positions = <29 28>;
         };
 
+        RightBrc {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <30 31>;
+        };
+
         LessT {
             bindings = <&kp LESS_THAN>;
             key-positions = <4 3>;
@@ -111,3 +116,4 @@
         };
     };
 };
+
