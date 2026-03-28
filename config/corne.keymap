@@ -14,47 +14,67 @@
 
         LeftPar {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <5 4>;
+            key-positions = <4 3>;
         };
 
         RightPar {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <6 7>;
+            key-positions = <7 8>;
         };
 
         LeftBkt {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <16 17>;
+            key-positions = <16 15>;
         };
 
         RightBkt {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <18 19>;
+            key-positions = <19 20>;
         };
 
         LeftBrc {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <29 28>;
+            key-positions = <28 27>;
         };
 
         RightBrc {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <30 31>;
+            key-positions = <31 32>;
         };
 
         LessT {
             bindings = <&kp LESS_THAN>;
-            key-positions = <4 3>;
+            key-positions = <4 5>;
         };
 
         GreaterT {
             bindings = <&kp GREATER_THAN>;
-            key-positions = <7 8>;
+            key-positions = <7 6>;
         };
 
         BothLayer {
             bindings = <&mo 3>;
             key-positions = <37 40>;
+        };
+
+        Equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <16 19>;
+        };
+
+        Plus {
+            bindings = <&kp PLUS>;
+            key-positions = <4 7>;
+        };
+
+        Minus {
+            bindings = <&kp MINUS>;
+            key-positions = <28 31>;
+        };
+
+        Underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <29 30>;
         };
     };
 
@@ -146,9 +166,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR  &kp PERCENT    &kp KP_DIVIDE    &kp N7  &kp N8  &kp N9  &kp KP_SUBTRACT  &trans
-&trans  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp MINUS   &kp EQUAL      &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp KP_PLUS      &trans
-&trans  &trans           &trans         &trans        &trans      &trans         &kp N0           &kp N1  &kp N2  &kp N3  &kp KP_COMMA     &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR  &kp PERCENT    &kp KP_DIVIDE    &kp N7  &kp N8  &kp N9  &kp MINUS   &trans
+&trans  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp MINUS   &kp EQUAL      &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp PLUS    &trans
+&trans  &trans           &trans         &trans        &trans      &trans         &kp N0           &kp N1  &kp N2  &kp N3  &kp KP_DOT  &trans
                                         &trans        &trans      &trans         &trans           &trans  &trans
             >;
         };
@@ -161,10 +181,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5     &kp HOME  &kp PG_DN   &kp PG_UP        &kp END        &kp RPAR  &trans
-&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10    &kp LEFT  &kp DOWN    &kp UP           &kp RIGHT      &kp BSLH  &trans
-&trans  &kp F11  &kp F12  &kp F10  &kp F11  &kp F12    &kp DEL   &kp INSERT  &kp PRINTSCREEN  &kp LS(LG(S))  &trans    &trans
-                          &trans   &trans   &trans     &trans    &trans      &trans
+&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &kp HOME  &kp PG_DN   &kp PG_UP        &kp END        &trans  &trans
+&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &kp LEFT  &kp DOWN    &kp UP           &kp RIGHT      &trans  &trans
+&trans  &kp F11  &kp F12  &trans  &trans  &trans     &kp DEL   &kp INSERT  &kp PRINTSCREEN  &kp LS(LG(S))  &trans  &trans
+                          &trans  &trans  &trans     &trans    &trans      &trans
             >;
         };
 
@@ -178,4 +198,5 @@
         };
     };
 };
+
 
