@@ -76,7 +76,7 @@
             >;
         };
 
-        lower_layer {
+        Numbers {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -84,14 +84,14 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR  &kp PERCENT    &kp KP_DIVIDE    &kp N7  &kp N8  &kp N9  &kp KP_SUBTRACT  &trans
+&trans  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp MINUS   &kp EQUAL      &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp KP_PLUS      &trans
+&trans  &trans           &trans         &trans        &trans      &trans         &kp N0           &kp N1  &kp N2  &kp N3  &kp KP_COMMA     &trans
+                                        &trans        &trans      &trans         &trans           &trans  &trans
             >;
         };
 
-        raise_layer {
+        Nav {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -99,19 +99,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5     &kp HOME  &kp PG_DN   &kp PG_UP        &kp END        &kp RPAR  &trans
+&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10    &kp LEFT  &kp DOWN    &kp UP           &kp RIGHT      &kp BSLH  &trans
+&trans  &kp F11  &kp F12  &kp F10  &kp F11  &kp F12    &kp DEL   &kp INSERT  &kp PRINTSCREEN  &kp LS(LG(S))  &trans    &trans
+                          &trans   &trans   &trans     &trans    &trans      &trans
             >;
         };
 
         both {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_NEXT       &trans        &trans        &trans
+                        &trans  &trans  &trans    &trans          &trans             &trans
             >;
         };
     };
