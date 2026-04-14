@@ -20,19 +20,19 @@
   <text class="label" x="544" y="92">RIGHT</text>
   <g transform="translate(42,106)">
     <g>
-      <rect class="key" x="0" y="0" width="48" height="36"/><text class="text" x="24" y="18">M-TAB</text>
+      <rect class="key" x="0" y="0" width="48" height="36"/><text class="text" x="24" y="18">A-TAB</text>
       <rect class="key" x="54" y="0" width="48" height="36"/><text class="text" x="78" y="18">!</text>
       <rect class="key" x="108" y="0" width="48" height="36"/><text class="text" x="132" y="18">@</text>
       <rect class="key" x="162" y="0" width="48" height="36"/><text class="text" x="186" y="18">#</text>
       <rect class="key" x="216" y="0" width="48" height="36"/><text class="text" x="240" y="18">$</text>
       <rect class="key" x="270" y="0" width="48" height="36"/><text class="text" x="294" y="18">%</text>
-      <rect class="key trans" x="0" y="44" width="48" height="36"/><text class="text" x="24" y="62">TRNS</text>
+      <rect class="key" x="0" y="44" width="48" height="36"/><text class="text" x="24" y="62">TAB</text>
       <rect class="key" x="54" y="44" width="48" height="36"/><text class="text" x="78" y="62">^</text>
       <rect class="key" x="108" y="44" width="48" height="36"/><text class="text" x="132" y="62">&amp;</text>
       <rect class="key" x="162" y="44" width="48" height="36"/><text class="text" x="186" y="62">*</text>
       <rect class="key" x="216" y="44" width="48" height="36"/><text class="text" x="240" y="62">-</text>
       <rect class="key" x="270" y="44" width="48" height="36"/><text class="text" x="294" y="62">=</text>
-      <rect class="key trans" x="0" y="88" width="48" height="36"/><text class="text" x="24" y="106">TRNS</text>
+      <rect class="key" x="0" y="88" width="48" height="36"/><text class="text" x="24" y="106">S-TAB</text>
       <rect class="key trans" x="54" y="88" width="48" height="36"/><text class="text" x="78" y="106">NONE</text>
       <rect class="key trans" x="108" y="88" width="48" height="36"/><text class="text" x="132" y="106">NONE</text>
       <rect class="key trans" x="162" y="88" width="48" height="36"/><text class="text" x="186" y="106">NONE</text>
@@ -48,12 +48,12 @@
       <rect class="key" x="108" y="0" width="48" height="36"/><text class="text" x="132" y="18">8</text>
       <rect class="key" x="162" y="0" width="48" height="36"/><text class="text" x="186" y="18">9</text>
       <rect class="key" x="216" y="0" width="48" height="36"/><text class="text" x="240" y="18">-</text>
-      <rect class="key trans" x="270" y="0" width="48" height="36"/><text class="text" x="294" y="18">TRNS</text>
+      <rect class="key" x="270" y="0" width="48" height="36"/><text class="text" x="294" y="18">+</text>
       <rect class="key" x="0" y="44" width="48" height="36"/><text class="text" x="24" y="62">*</text>
       <rect class="key" x="54" y="44" width="48" height="36"/><text class="text" x="78" y="62">4</text>
       <rect class="key" x="108" y="44" width="48" height="36"/><text class="text" x="132" y="62">5</text>
       <rect class="key" x="162" y="44" width="48" height="36"/><text class="text" x="186" y="62">6</text>
-      <rect class="key" x="216" y="44" width="48" height="36"/><text class="text" x="240" y="62">+</text>
+      <rect class="key" x="216" y="44" width="48" height="36"/><text class="text" x="240" y="62">ç</text>
       <rect class="key" x="270" y="44" width="48" height="36"/><text class="text" x="294" y="62">~</text>
       <rect class="key" x="0" y="88" width="48" height="36"/><text class="text" x="24" y="106">0</text>
       <rect class="key" x="54" y="88" width="48" height="36"/><text class="text" x="78" y="106">1</text>

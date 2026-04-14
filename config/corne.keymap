@@ -79,6 +79,88 @@
     };
 
     macros {
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp TAB>,
+                <&macro_pause_for_release>,
+                <&macro_release &kp LALT>;
+
+            label = "ALT_TAB";
+        };
+
+        alt_f4: alt_f4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp F4>,
+                <&macro_release &kp LALT>;
+
+            label = "ALT_F4";
+        };
+
+        ctrl_w: ctrl_w {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &kp W>,
+                <&macro_release &kp LCTRL>;
+
+            label = "CTRL_W";
+        };
+
+        ctrl_t: ctrl_t {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &kp T>,
+                <&macro_release &kp LCTRL>;
+
+            label = "CTRL_T";
+        };
+
+        ctrl_tab: ctrl_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &kp TAB>,
+                <&macro_release &kp LCTRL>;
+
+            label = "CTRL_TAB";
+        };
+
+        ctrl_shift_tab: ctrl_shift_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_press &kp LSHFT>,
+                <&macro_tap &kp TAB>,
+                <&macro_release &kp LSHFT>,
+                <&macro_release &kp LCTRL>;
+
+            label = "CTRL_SHIFT_TAB";
+        };
+
+        ctrl_shift_t: ctrl_shift_t {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_press &kp LSHFT>,
+                <&macro_tap &kp T>,
+                <&macro_release &kp LSHFT>,
+                <&macro_release &kp LCTRL>;
+
+            label = "CTRL_SHIFT_T";
+        };
+
         tmux1: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -146,8 +228,8 @@
         default_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+            // | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+            // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
@@ -160,14 +242,14 @@
 
         Numbers {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+            // |A-TAB |  !  |  @  |  #  |  $  |  %  |   |  /  |  7  |  8  |  9  |  -  |  +   |
+            // | SHFT |  ^  |  &  |  *  |  -  |  =  |   |  *  |  4  |  5  |  6  |  ç  |  ~   |
+            // | CTRL |     |     |     |     |     |   |  0  |  1  |  2  |  3  |  .  |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LA(TAB)  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR  &kp PERCENT    &kp KP_DIVIDE    &kp N7  &kp N8  &kp N9  &kp MINUS   &trans
-&trans       &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp MINUS   &kp EQUAL      &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp PLUS    &kp TILDE
+&alt_tab     &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR  &kp PERCENT    &kp KP_DIVIDE    &kp N7  &kp N8  &kp N9  &kp MINUS   &kp PLUS
+&trans       &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp MINUS   &kp EQUAL      &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp RA(COMMA)  &kp TILDE
 &trans       &none            &none          &none         &none       &none          &kp N0           &kp N1  &kp N2  &kp N3  &kp KP_DOT  &trans
                                              &trans        &trans      &trans         &trans           &trans  &trans
             >;
@@ -175,9 +257,9 @@
 
         Nav {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+            // |      | F1  | F2  | F3  | F4  | F5  |   |HOME |PGDN |PGUP | END |     |      |
+            // |      | F6  | F7  | F8  | F9  | F10 |   |LEFT |DOWN |  UP |RGT  |     |      |
+            // |      | F11 | F12 |     |     |     |   | DEL | INS | PRT |LOCK |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
@@ -189,10 +271,16 @@
         };
 
         both {
+            // -----------------------------------------------------------------------------------------
+            // |      | TM1 | TM2 | TM3 | TM4 |     |   | BT0 | BT1 | BT2 | BT3 | BT4 |BCLR |
+            // |      | C-W |C-S-T|DETCH|A-F4 | G1  |   |MUTE |VOL- |VOL+ | BR- | BR+ |     |
+            // |      | C-T |C-S-B| NEW |C-TAB|     |   |PREV |PLAY |NEXT |     |     |      |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
             bindings = <
 &trans  &tmux1  &tmux2  &tmux3        &tmux4  &none     &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_SEL 3          &bt BT_SEL 4          &bt BT_CLR
-&trans  &none   &none   &tmux_detach  &none   &to 4     &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none
-&trans  &none   &none   &tmux_new     &none   &none     &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_NEXT       &none                 &none                 &trans
+&trans  &ctrl_w &ctrl_shift_t  &tmux_detach  &alt_f4       &to 4     &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none
+&trans  &ctrl_t &ctrl_shift_tab  &tmux_new     &ctrl_tab     &none     &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_NEXT       &none                 &none                 &trans
                         &trans        &trans  &trans    &trans          &trans             &trans
             >;
         };
