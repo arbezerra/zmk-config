@@ -259,13 +259,13 @@
             // -----------------------------------------------------------------------------------------
             // |      | F1  | F2  | F3  | F4  | F5  |   |HOME |PGDN |PGUP | END |     |      |
             // |      | F6  | F7  | F8  | F9  | F10 |   |LEFT |DOWN |  UP |RGT  |     |      |
-            // |      | F11 | F12 |     |     |     |   | DEL | INS | PRT |LOCK |     |      |
+            // |      | F11 | F12 |     |     |     |   | DEL | INS | PRT |LOCK |     | CAPS |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
 &trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &kp HOME  &kp PG_DN   &kp PG_UP        &kp END        &none  &trans
 &trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &kp LEFT  &kp DOWN    &kp UP           &kp RIGHT      &none  &none
-&trans  &kp F11  &kp F12  &none   &none   &none      &kp DEL   &kp INSERT  &kp PRINTSCREEN  &kp LS(LG(S))  &none  &trans
+&trans  &kp F11  &kp F12  &none   &none   &none      &kp DEL   &kp INSERT  &kp PRINTSCREEN  &kp LS(LG(S))  &none  &kp CAPSLOCK
                           &trans  &trans  &trans     &trans    &trans      &trans
             >;
         };

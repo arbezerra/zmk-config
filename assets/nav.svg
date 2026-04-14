@@ -60,7 +60,7 @@
       <rect class="key" x="108" y="88" width="48" height="36"/><text class="text" x="132" y="106">PRT</text>
       <rect class="key" x="162" y="88" width="48" height="36"/><text class="text" x="186" y="106">LOCK</text>
       <rect class="key trans" x="216" y="88" width="48" height="36"/><text class="text" x="240" y="106">NONE</text>
-      <rect class="key trans" x="270" y="88" width="48" height="36"/><text class="text" x="294" y="106">TRNS</text>
+      <rect class="key" x="270" y="88" width="48" height="36"/><text class="text" x="294" y="106">CAPS</text>
       <rect class="thumb trans" x="0" y="142" width="60" height="38"/><text class="text" x="30" y="161">TRNS</text>
       <rect class="thumb trans" x="66" y="142" width="58" height="38"/><text class="text" x="95" y="161">TRNS</text>
       <rect class="thumb trans" x="130" y="142" width="58" height="38"/><text class="text" x="159" y="161">TRNS</text>
