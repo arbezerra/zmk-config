@@ -52,11 +52,6 @@
             key-positions = <7 6>;
         };
 
-        BothLayer {
-            bindings = <&mo 3>;
-            key-positions = <37 40>;
-        };
-
         Equal {
             bindings = <&kp EQUAL>;
             key-positions = <16 19>;
@@ -229,6 +224,15 @@
 &trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                          &trans  &trans  &trans    &trans  &trans  &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Both {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
